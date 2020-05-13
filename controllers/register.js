@@ -1,5 +1,5 @@
 
-const handleRegister = (req, res, db, bcrypt) => {
+const handleRegister = (db, bcrypt) => (req, res) => {
     //new user created
     //learn to write async functions to clean this up.
     const { email, name, password } = req.body;
