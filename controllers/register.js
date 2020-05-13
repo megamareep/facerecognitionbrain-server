@@ -29,9 +29,9 @@ const handleRegister = (db, bcrypt) => (req, res) => {
                             
                     })
                     .then(trx.commit)
-                    .catch(err => res.status(400).json('Unable to register'))                    
+                    .catch(err => res.status(400).json('Unable to register trx'))                    
             })
-            .catch(err => res.status(400).json('Unable to register'))
+            .catch(err => res.status(400).json('Unable to register db'))
             
         });
     })
