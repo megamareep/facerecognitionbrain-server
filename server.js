@@ -25,6 +25,8 @@ app.post('/register', register.handleRegister(db, bcrypt));
 app.post('/signin', signin.handleSignin(db, bcrypt))
 app.get('/profile/:id', profile.handleProfileGet(db))
 app.put('/image', image.handleImage(db))
+app.post('/imageurl', image.handleApiCall)
+
 
 
 app.listen(3000, () => {
